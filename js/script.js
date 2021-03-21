@@ -57,13 +57,14 @@ const renderUsers = (users) => {
   let usersHTML = '';
   users.forEach((user) => {
     const userBox = `
-    <div id="userBox">
-    <div class="img-div">
-    <img src="${user.picture}">
-    </div>
-    <div>
-    <p>${user.name}, ${user.age} anos</p>
-    </div>
+    <div id="userBox" class="user-box">
+      <div class="img-div">
+        <img src="${user.picture}">
+      </div>
+      <div class="user-data">
+        <p>${user.name},
+        </br> ${user.age} anos</p>
+      </div>
     </div>
     `;
     usersHTML += userBox;
